@@ -2816,10 +2816,11 @@ footer .line {
     width: 100%;
 
     fill: rgba(0, 74, 151, 0.68);
-    backdrop-filter: blur(16.899999618530273px);
+
     top: 240px;
     background-image: url(../images/svg/homeblur.svg);
     top: 142px;
+    background-size: 100%;
   }
   #Video video {
     height: 100vh;
