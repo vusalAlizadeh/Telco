@@ -1161,6 +1161,8 @@ footer .line {
   display: flex;
   max-width: 648px;
   max-height: 132px;
+  width: 648px;
+  height: 132px;
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
@@ -1989,17 +1991,49 @@ footer .line {
 /*}*/
 
 #About {
-  width: 1440px;
+  width: 100vw;
   margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  top: 72px;
 }
 
 #About .aboutSectionimage {
   width: 1440px;
   height: 464px;
   overflow: hidden;
+  position: relative;
+}
+#About .aboutSectionimage h1 {
+  position: absolute;
+  flex-shrink: 0;
+  color: rgba(90, 154, 255, 0);
+  text-align: right;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #6ca5ff;
+  font-family: "Open Sans Hebrew Condensed";
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 200px */
+  top: 32px;
+  right: 112px;
+  z-index: 999;
+}
+#About .aboutSectionimage h2 {
+  position: absolute;
+  flex-shrink: 0;
+  right: 112px;
+  color: #defa39;
+  text-align: right;
+  font-family: "Open Sans Hebrew Condensed";
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 200px */
+  bottom: 31px;
 }
 
 #About .aboutSectionimage img {
@@ -2759,6 +2793,9 @@ footer .line {
 }
 /*# sourceMappingURL=style.css.map */
 
+#ServiceDetail .serviceDetailHead .arrows {
+  display: none;
+}
 /* ----------------------Responsive Design for Mobile----------------------------------------- */
 @media only screen and (max-width: 992px) {
   body {
@@ -2952,6 +2989,9 @@ footer .line {
 
     background-size: cover;
     background-position: left;
+  }
+  #ServiceSection {
+    background-image: url(../images/svg/serviceMobilebg.svg);
   }
   #Services h1 {
     width: 100%;
@@ -3504,6 +3544,7 @@ footer .line {
   /*------------------------------- ABOUT US ------------------*/
   #About {
     width: 100vw;
+    top: 0;
   }
 
   #About .aboutSectionimage {
@@ -3513,7 +3554,7 @@ footer .line {
 
     position: relative;
   }
-  .aboutSectionimage h1 {
+  #About .aboutSectionimage h1 {
     color: rgba(90, 154, 255, 0);
 
     -webkit-text-stroke-width: 2px;
@@ -3529,7 +3570,7 @@ footer .line {
     right: 30px;
     text-align: right;
   }
-  .aboutSectionimage h2 {
+  #About .aboutSectionimage h2 {
     color: #defa39;
     text-align: right;
     font-family: "Open Sans Hebrew Condensed";
@@ -3556,35 +3597,92 @@ footer .line {
     width: 100vw;
     height: 238px;
     position: relative;
+
+    backdrop-filter: blur(2px);
   }
   #Intro h1 {
     font-size: 64px;
     top: 72px;
-    left: 56px;
+    left: 0;
+    width: 100%;
   }
   #Intro h2 {
     font-size: 32px;
-    left: 47px;
+    left: 0;
     top: 92px;
     bottom: 71px;
     width: 296px;
+
+    width: 296px;
+    left: calc((100vw - 296px) / 2);
   }
   #SolutionGroups {
     width: 100vw;
+    padding: 30px 0;
+    gap: 40px;
   }
   #SolutionGroups .intro {
     width: 100vw;
-
+    height: auto;
     padding-inline: 30px;
+    font-size: 14px;
+  }
+  #SolutionGroups .solutionCard {
+    background-image: url(../images/svg/solutionsRectangle1.svg) !important;
+    background-repeat: no-repeat;
+    background-position: top right !important;
+    width: 100%;
+    position: relative;
+
+    padding-bottom: 0;
+    height: 200px;
   }
 
+  #SolutionGroups .solutionSecondCard {
+    background-image: url(../images/svg/solutionsRectangle2.svg) !important;
+
+    background-repeat: no-repeat;
+    background-position: left !important;
+    width: 100%;
+    position: relative;
+  }
+  .nonReversed {
+    display: none;
+  }
+  #SolutionGroups .solutionCard .solutionText {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 90%;
+  }
+  #SolutionGroups .solutionCard .solutionText .subtitle {
+    font-size: 14px;
+    width: calc(100% - 128px);
+
+    height: auto;
+  }
+  #SolutionGroups .solutionSecondCard .solutionText .secondSubtitle {
+    position: absolute;
+    right: 20px;
+  }
+  #SolutionGroups .solutionSecondCard .solutionText .secondSubtitle {
+    width: calc(100% - 98px);
+
+    top: 49px;
+  }
+  #SolutionGroups .solutionCard .solutionText .title {
+    font-size: 16px;
+  }
+  #SolutionGroups .solutionCard .solutionText .secondTitle {
+    padding-left: 80px;
+  }
   /*------------------------ PARTNERS --------------------*/
   #PartnersHead {
     width: 100vw;
     height: 238px;
   }
   #PartnersHead .overlay .partnersTitle {
-    width: 251px;
+    width: 100%;
 
     padding: 0;
     top: 49px;
@@ -3592,11 +3690,19 @@ footer .line {
   }
   #PartnersHead .overlay .partnersTitle h1 {
     font-size: 54px; /* --------------------------- custom */
+
+    width: 100vw;
+    text-align: center;
+  }
+  #PartnersHead .overlay .partnersTitle {
+    left: 0;
   }
   #PartnersHead .overlay .partnersTitle h2 {
-    width: 296px;
+    width: 100vw;
     font-size: 32px;
     text-align: center;
+
+    left: calc((100vw - 296px) / 2);
   }
   #PartnersBody {
     width: 100vw;
