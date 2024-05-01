@@ -3059,8 +3059,7 @@ footer .line {
   #Contact {
     width: 100%;
     height: 764px;
-    background-image: url(../images/svg/homeContactbg.svg);
-    background-size: cover;
+    background-image: url(../images/svg/homeContactbg.png);
 
     /* -----------------------------------------------  Custom */
   }
