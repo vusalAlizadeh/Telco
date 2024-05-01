@@ -2760,7 +2760,7 @@ footer .line {
 /*# sourceMappingURL=style.css.map */
 
 /* ----------------------Responsive Design for Mobile----------------------------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   body {
     display: flex;
     width: 100vw !important;
@@ -3017,8 +3017,8 @@ footer .line {
     width: 100%;
     height: 764px;
     flex-shrink: 0;
-    background-image: url(../images/svg/complexitybg.jpg);
-    background-size: 100% 100% !important;
+    background-image: url(../images/svg/complexity.svg);
+    background-size: cover;
   }
 
   #Complexity .complexityTexts {
@@ -3059,8 +3059,8 @@ footer .line {
   #Contact {
     width: 100%;
     height: 764px;
-    background-image: url(../images/svg/contactusbg.png);
-    background-size: 100% 100%;
+    background-image: url(../images/svg/homeContactbg.svg);
+    background-size: cover;
 
     /* -----------------------------------------------  Custom */
   }
@@ -3215,7 +3215,7 @@ footer .line {
     position: absolute;
     top: -119px;
 
-    border: 1px solid red;
+ 
   }
   footer .line {
     top: 375px;
@@ -3424,7 +3424,6 @@ footer .line {
   #ContactHead {
     width: 100vw;
     height: 928px;
-    border: 1px solid red;
   }
   #ContactHead .overlay {
     position: relative;
@@ -3653,9 +3652,14 @@ footer .line {
       justify-content: center;
       align-items: flex-start;
 
-      img {
-        width: 68px;
-        height: 68px;
+      a {
+        img {
+          width: 68px;
+          height: 68px;
+        }
+        .logo2 {
+          display: none;
+        }
       }
     }
     .closeMenu {
@@ -3782,4 +3786,528 @@ footer .line {
   top: 0;
   left: 0;
   z-index: 999999;
+}
+
+/* -----------------------Responsive Design for Tablet ------------------------*/
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  header {
+    width: 100vw;
+    padding: 15px 40px;
+  }
+  header .logo a .second {
+    display: block;
+  }
+  header .mobileMenu {
+    right: 40px;
+  }
+  header .mobileMenu svg {
+    width: 60px;
+    height: 60px;
+  }
+  #Video {
+    height: 90vh;
+  }
+  #Video video {
+    height: 100%;
+  }
+  #Video .blursvg {
+    top: 52px;
+    background-size: calc(100% - 20px);
+  }
+
+  #Video .card {
+    display: block;
+    right: 20px;
+    top: 370px;
+    width: 350px;
+    height: 492px;
+  }
+
+  #Video .card .cardPhoto {
+    width: 350px;
+    height: 214px;
+  }
+  #Video .card .cardDetails {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #Video .blursvg .homeTexts .homeCapital {
+    width: auto;
+    height: 94px;
+    overflow: visible;
+  }
+  #Video .blursvg .homeTexts .homeCapital h1 {
+    font-size: 96px;
+    width: 534px;
+    line-height: 100%;
+    margin-top: 130px;
+  }
+  #Video .blursvg .homeTexts {
+    margin-top: 0;
+  }
+  #Video .blursvg .homeTexts .homeLower h4 {
+    width: 299px;
+    height: 96px;
+    font-size: 32px;
+
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  #Video .blursvg .homeTexts .homeLower p {
+    width: 299px;
+    text-align: justify;
+  }
+  #Video .blursvg .homeTexts .homeLower {
+    width: 299px;
+    height: 196px;
+
+    font-size: 32px;
+    margin-top: 110px;
+  }
+  #AboutHome .allText h1 {
+    left: 60px;
+    top: 64px;
+    font-size: 96px;
+  }
+  #AboutHome {
+    background-size: 646px 545px;
+    height: 915px;
+    background-position: 181% -149px;
+  }
+  #AboutHome .allText .left {
+    top: 294px;
+  }
+  #AboutHome .allText .right {
+    top: 589px;
+  }
+  #AboutHome .allText .left h3 {
+    font-size: 16px;
+  }
+  #AboutHome .allText .right h3 {
+    position: absolute;
+    right: 40px;
+    width: 516px;
+  }
+  #Services {
+    height: 926px;
+  }
+  #Services h1 {
+    width: calc(100% - 80px);
+    top: 40px;
+    left: 40px;
+
+    font-size: 70px;
+    height: 104px;
+  }
+  #Services .serviceCards {
+    left: 152px;
+
+    top: 294px;
+
+    width: 100vw;
+  }
+  #Services .serviceCards .card {
+    height: 388px;
+  }
+  #Complexity .complexityTexts {
+    gap: 70px;
+    left: 40px;
+    width: 588px;
+    top: 140px;
+  }
+  #Complexity .complexityTexts h1 {
+    width: 588px;
+    font-size: 64px;
+    line-height: 150%;
+  }
+  #Complexity .complexityTexts .textVsButton {
+    width: 428px;
+  }
+  #Complexity .complexityTexts .textVsButton h2 {
+    font-size: 36px;
+    width: 100%;
+    height: auto;
+  }
+  #Complexity .complexityTexts .textVsButton h3 {
+    font-size: 16px;
+    width: 455px;
+    height: auto;
+  }
+  #Complexity .miniButtons {
+    left: 40px;
+    bottom: 80px;
+  }
+  #Contact {
+    height: 926px;
+  }
+  #Contact h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    right: 40px;
+
+    top: 70px;
+  }
+  #Contact form {
+    width: 312px;
+
+    gap: 16px;
+    align-items: flex-end;
+    right: 40px;
+    margin-top: 10px;
+  }
+  #Contact form .inputWithLabel input {
+    width: 100%;
+    display: flex;
+    width: 312px;
+    font-size: 14px;
+    gap: 12px;
+  }
+  #Contact form .inputWithLabel label {
+    font-size: 16px;
+  }
+  #Contact form .messageinput textarea {
+    width: 312px !important;
+    position: absolute;
+    left: 0;
+  }
+
+  #News {
+    height: 881px;
+  }
+  #News h1 {
+    height: 348px;
+
+    font-size: 96px;
+  }
+
+  #News .newsSlider .sliderLeft {
+    width: 659px;
+    height: 578px;
+  }
+  #News .newsSlider .sliderRight {
+    height: 578px;
+  }
+  #News .newsSlider {
+    height: auto;
+    height: 578px;
+    top: 348px;
+  }
+  #News .newsSlider .sliderLeft h1 {
+    width: 421px;
+    height: 107px;
+    left: 40px;
+    top: 60px;
+    justify-content: flex-start;
+    font-size: 36px;
+  }
+  #News .newsSlider .sliderLeft p {
+    width: 463px;
+    left: 40px;
+
+    top: 175px;
+
+    font-size: 16px;
+  }
+  .mobileFooter {
+    & .mobilefooterinfo {
+      .mobilelogo {
+        display: flex;
+        align-items: flex-start;
+
+        justify-content: space-between;
+        width: 608px;
+        overflow-x: hidden;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .mobileFooter {
+    & .mobilefooterinfo {
+      .mobilefootermenu {
+        flex-wrap: nowrap;
+        width: 608px;
+
+        margin-top: 56px;
+      }
+    }
+  }
+  .mobileFooter {
+    & .mobilefooterinfo {
+      .mobilefootermenu div {
+        flex: 1;
+      }
+    }
+  }
+  .mobileFooter {
+    height: 448px;
+    gap: 44px;
+    & .mobilefooterinfo {
+      & .mobilelogo {
+        margin-top: 30px;
+        & .mobilelogolinks {
+          display: flex;
+
+          img:first-child {
+            margin-left: 0;
+          }
+          .logo2 {
+            display: block;
+            width: 138px;
+            height: 68px;
+            object-fit: cover;
+
+            margin-left: -8px;
+          }
+        }
+      }
+    }
+  }
+
+  /* ------------------------------SERVICES */
+  #ServiceSection {
+    height: 475px;
+  }
+  #ServiceSection h1 {
+    font-size: 128px;
+    width: 626px;
+    top: 80px;
+  }
+  #ServiceSection h2 {
+    font-size: 64px;
+    width: 541px;
+    position: absolute;
+    bottom: 80px;
+  }
+  #Service {
+  }
+  #Service .all .tab-services {
+    display: flex;
+    align-items: flex-start;
+    gap: -32px;
+  }
+  #Service .all .tab-services .tab-service {
+    display: flex;
+    width: 240px; /*------------------------custom */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #ServiceDetail {
+    padding: 60px;
+  }
+  #ServiceDetail .serviceDetailHead .arrows {
+    display: none;
+  }
+  #ServiceDetail h1 {
+    font-size: 64px;
+    width: 100%;
+  }
+  #ServiceDetail P {
+    font-size: 20px;
+  }
+
+  /*----------------------------------- CONTACT US */
+
+  #ContactHead {
+    background-position-x: 122px;
+    height: 926px;
+  }
+  #ContactHead .overlay .contactInfos {
+    width: 415px;
+    height: 188px;
+    top: 516px;
+    left: calc(100vw - 415px);
+  }
+  #ContactHead .overlay .contactInfos .allInfo {
+    width: 317px;
+    right: 28px;
+    bottom: 30px;
+  }
+  #ContactHead .overlay .contactInfos .socialMedia {
+    right: 28px;
+  }
+
+  #ContactHead .overlay .titleText h1 {
+    left: -64px;
+    top: 4px;
+    font-size: 128px;
+  }
+  #ContactHead .overlay .titleText h2 {
+    font-size: 80px;
+    left: 104px;
+  }
+  #ContactHead .overlay form {
+    position: absolute;
+    top: 314px;
+    left: 40px;
+    gap: 16px;
+    width: 312px !important;
+  }
+  #ContactHead .overlay form .inputWithLabel {
+    width: 100%;
+  }
+  #ContactHead .overlay form .inputWithLabel input {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+  }
+  #ContactHead .overlay form .messageinput textarea {
+    width: 312px !important;
+    height: 132px !important;
+  }
+
+  #Map {
+    height: 463px;
+  }
+
+  /* -------------------ABOUT US */
+
+  #About .aboutSectionimage {
+    height: 476px;
+    width: 100%;
+  }
+  .aboutSectionimage h1 {
+    font-size: 140px;
+    top: 98px;
+    right: 40px;
+  }
+  .aboutSectionimage h2 {
+    font-size: 140px;
+    bottom: 98px;
+    right: 40px;
+  }
+  #About .aboutSectionText {
+    padding: 60px;
+  }
+
+  /*---------- PARTNERS --------------------*/
+  #PartnersHead {
+    height: 440px;
+    background-image: url(../images/svg/partnersbg.svg);
+  }
+  #PartnersHead .overlay {
+    background: rgba(5, 16, 35, 0.59);
+    backdrop-filter: blur(2.700000047683716px);
+  }
+  #PartnersHead .overlay .partnersTitle {
+    width: 100%;
+    padding-inline: 60px;
+
+    left: 0;
+    top: 126px;
+  }
+  #PartnersHead .overlay .partnersTitle h1 {
+    width: calc(100vw - 120px);
+
+    text-align: center;
+    font-size: 108px; /* Figmada 128px idi */
+  }
+  #PartnersHead .overlay .partnersTitle h2 {
+    width: calc(100vw - 120px);
+
+    width: 648px;
+    font-size: 38px; /* Figmada 48px idi */
+  }
+
+  #PartnersBody {
+    padding: 90px 60px;
+  }
+  #PartnersBody p {
+    height: auto;
+  }
+
+  #PartnersBody .allPartners {
+    gap: 24px;
+    justify-content: space-between;
+  }
+  #PartnersBody .allPartners .partnersCard {
+    width: calc((100vw - 168px) / 3);
+    height: calc((100vw - 168px) / 3);
+  }
+
+  /* -----------------Tablet Menu */
+
+  .mobileMenu {
+    .menuBar {
+      .header {
+        padding: 15px 40px;
+
+        .logo {
+          a {
+            .logo2 {
+              width: 138px;
+              height: 68px;
+              object-fit: cover;
+            }
+          }
+        }
+        .closeMenu {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      .menuOverlay {
+        padding-right: 60px;
+        padding-top: 120px;
+        justify-content: flex-start;
+
+        .language {
+          .langoptions {
+            width: 79%;
+            a {
+              color: #000;
+              text-align: right;
+              font-family: Inter;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 100%;
+            }
+          }
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+          .lang {
+            a {
+              font-size: 32px;
+            }
+          }
+        }
+        .menuList {
+          gap: 30px;
+
+          .menuItem {
+            font-size: 32px;
+
+            .socialMedia {
+              a:nth-child(1) svg {
+                width: 16px;
+                height: 31.997px;
+              }
+              a:nth-child(2) svg {
+                width: 39.385px;
+                height: 32px;
+              }
+              a:nth-child(3) svg {
+                width: 32px;
+                height: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
